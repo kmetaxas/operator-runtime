@@ -1,7 +1,7 @@
 package reconciler
 
 import (
-	"github.com/datainfrahq/operator-runtime/builder"
+	"github.com/kmetaxas/operator-runtime/builder"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 )
 

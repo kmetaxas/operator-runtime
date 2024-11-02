@@ -1,4 +1,4 @@
-module github.com/datainfrahq/operator-runtime
+module github.com/kmetaxas/operator-runtime
 
 go 1.19
 

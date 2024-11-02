@@ -10,9 +10,9 @@
 
 <div align="center">
 
-![Build Status](https://github.com/datainfrahq/operator-runtime/actions/workflows/go.yml/badge.svg) [![Slack](https://img.shields.io/badge/slack-brightgreen.svg?logo=slack&label=Community&style=flat&color=%2373DC8C&)](https://launchpass.com/datainfra-workspace)
-[![Go Reference](https://pkg.go.dev/badge/github.com/datainfrahq/operator-runtime.svg)](https://pkg.go.dev/github.com/datainfrahq/operator-runtime)
-![GitHub issues](https://img.shields.io/github/issues/datainfrahq/operator-runtime) [![Go Report Card](https://goreportcard.com/badge/github.com/datainfrahq/operator-runtime)](https://goreportcard.com/report/github.com/datainfrahq/operator-runtime)
+![Build Status](https://github.com/kmetaxas/operator-runtime/actions/workflows/go.yml/badge.svg) [![Slack](https://img.shields.io/badge/slack-brightgreen.svg?logo=slack&label=Community&style=flat&color=%2373DC8C&)](https://launchpass.com/datainfra-workspace)
+[![Go Reference](https://pkg.go.dev/badge/github.com/kmetaxas/operator-runtime.svg)](https://pkg.go.dev/github.com/kmetaxas/operator-runtime)
+![GitHub issues](https://img.shields.io/github/issues/kmetaxas/operator-runtime) [![Go Report Card](https://goreportcard.com/badge/github.com/kmetaxas/operator-runtime)](https://goreportcard.com/report/github.com/kmetaxas/operator-runtime)
 
 </div>
 
@@ -119,5 +119,5 @@ func makeOwnerRef(apiVersion, kind, name string, uid types.UID) *metav1.OwnerRef
 ## :stethoscope: Support
 
 - For questions and feedback please feel free to reach out to us on [Slack ↗︎](https://launchpass.com/datainfra-workspace).
-- For bugs, please create issue on [GitHub ↗︎](https://github.com/datainfrahq/operator-runtime/issues).
+- For bugs, please create issue on [GitHub ↗︎](https://github.com/kmetaxas/operator-runtime/issues).
 - For commercial support and consultation, please reach out to us at [`hi@datainfra.io` ↗︎](mailto:hi@datainfra.io).
