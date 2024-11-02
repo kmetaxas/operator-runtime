@@ -13,6 +13,7 @@ import (
 type BuilderDeploymentStatefulSet struct {
 	Replicas            int32
 	Labels              map[string]string
+	Annotations         map[string]string
 	VolumeClaimTemplate []BuilderStorageConfig
 	ServiceName         string
 	PodSpec             *v1.PodSpec
@@ -116,7 +117,8 @@ func (b *BuilderDeploymentStatefulSet) makeDeployment() (*appsv1.Deployment, err
 			},
 			Template: v1.PodTemplateSpec{
 				ObjectMeta: metav1.ObjectMeta{
-					Labels: b.Labels,
+					Labels:      b.Labels,
+					Annotations: b.Annotations,
 				},
 				Spec: *b.PodSpec,
 			},
@@ -141,7 +143,8 @@ func (b *BuilderDeploymentStatefulSet) MakeStatefulSet() (*appsv1.StatefulSet, e
 			Template: v1.PodTemplateSpec{
 				Spec: *b.PodSpec,
 				ObjectMeta: metav1.ObjectMeta{
-					Labels: b.Labels,
+					Labels:      b.Labels,
+					Annotations: b.Annotations,
 				},
 			},
 		},

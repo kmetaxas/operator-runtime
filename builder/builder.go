@@ -25,6 +25,7 @@ type CommonBuilder struct {
 	CurrentState client.Object
 	ObjectList   client.ObjectList
 	Labels       map[string]string
+	Anotations   map[string]string
 }
 
 type ToBuilder func(opts *Builder)
